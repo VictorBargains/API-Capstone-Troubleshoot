@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Finder</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="appLogo" role="banner">
+        <div class="col-4">
+            <input type="image" class="logo"
+            src="https://cdn.pixabay.com/photo/2016/09/16/19/18/microphone-1674903_640.png" alt="music-logo">
+        </div>
+    </header>
+    <div class="background">
+        <div class="background-image">
+    </div>
+    <div class="container">
+        <form id="js-form">
+            <label for="search-term">Search Band/Artist</label>
+            <input type="text" name="search-term" id="js-search-term" placeholder="Queen" required>
+
+            <input type="submit" id="js-search-button" value="Get Videos">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        
+        
+        <section id="results" class="hidden">
+            <h2>Top Videos:</h2>
+            <ul id="video-list"></ul> 
+        </section>
+        <section id="similar-artists" class="hidden">
+            <h2>Similar Artists:</h2>
+            <ul id="similar-artists-list"></ul>
+        </section>
+
+        <section id="search-history" class="hidden">
+            <h2>Search History</h2>
+            <ul id="search-history-list"></ul>
+        </section>
+
+        <section class="site-info">
+            <h2>Welcome to Music Researcher!</h2>
+            <h3>About the site:</h3>
+            <p>Curious what a band's most popular songs are? Enter their name and we will display their top songs so that you can get a taste.</p>
+        </section>
+    </div>
+    <script src="test.js"></script>
+    
+</body>
+
+</html>
